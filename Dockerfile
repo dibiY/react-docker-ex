@@ -4,7 +4,7 @@ LABEL version="1.0"
 LABEL description="This is the base docker image for prod frontend react app."
 WORKDIR /app
 COPY ["package.json", "./"]
-RUN npm install — production
+RUN npm install -- production
 COPY . ./
 RUN npm run build
 
